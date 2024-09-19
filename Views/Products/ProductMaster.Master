@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ProductMaster.master.cs" Inherits="Sample2.Views.Products.ProductMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../../Assests/Lib/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2" style="background-color:crimson">
+                <div class="row">
+                    <div class="col-md-2">
+
+                    </div>
+                    <div class="col-md-6">
+                        <label class="text-white">Sample Application</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                 <form id="form1" runat="server">
+     <div>
+         <asp:ContentPlaceHolder ID="SampleApplication" runat="server">
+         </asp:ContentPlaceHolder>
+     </div>
+ </form>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
